@@ -55,15 +55,40 @@ def main():
     copy_src_to_dst(src_static_dir, dst_to_dir)
     print("\nCopy process complete!\n")
 
-    # reciursively generate pages from content markdown files to {destination} directory as html files
+    # recursively generate pages from content markdown files to {destination} directory as html files
     from_path = os.path.join(project_root, 'content')
     template_path = os.path.join(project_root, 'template.html')
     dest_path = os.path.join(project_root, f'{destination}')
     generate_pages_recursive(from_path, template_path, dest_path, basepath)
 
+    import webbrowser
+    from pathlib import Path
+    # Set the local URL based on the basepath
     if basepath != "/":
-        print(f'\nCommit to git repository and then check out the website! \nhttps://engineerexp.github.io{basepath} \n')
+        url = f'https://engineerexp.github.io{basepath}'
+        print()
+        print(f"Use following commands in another terminal to post to Github:\n(do commands within {Path(__file__).parent.parent})\n\ngit add . \ngit commit -m 'your message' \ngit push origin main")
 
+    else:
+        url = 'http://localhost:8888/'
+
+    asking = input(f"\nDo you want to open the website now? (y/n): ")
+    if asking.lower() != 'y':
+        print("Exiting without opening the website.")
+        return
+    else:
+        # Attempt open the website in the Chrome browser on a new tab
+        # This seems to only work if you specify the chrome path explicitly (note that /mnt/c/ is for WSL to access windows C: drive)
+        chrome_path = r"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+        if not Path(chrome_path).exists():
+            print("Cannot find Chrome.exe at specified path. Please update the path in the script to the Chrome.exe.")
+        else:
+            print(f'\n... Opening website... \n>>> Link: {url} \n')
+            print(">>> Might need to refresh cache (ctrl + F5) to see updates")
+        
+            # open the local website in the chrome browser
+            webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+            webbrowser.get('chrome').open_new_tab(url)
 
 if __name__ == "__main__":
     main()

@@ -1,11 +1,17 @@
-# Cool_Engineering_Stuff
+# Cool Engineering Stuff
 
-## Nephews can be annoying
+## Just doing more testing...
+Currently there is not much I am doing since I am modifying the generator for this website.
+Stuff be a bit complicated...
 
->67, 67, lemonade, lemonade, lemonade, lemonade, 67, 67 ...
+### Yeah, this is a thing.
+>I cannot hold a fork properly. I hold like caveman.
 >
->-- My annoying nephews
+>-- Kyle
 
+
+### Is this a Rick Roll?
+#### Maybe...
 <iframe width="420" height="315"
 src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1">
 </iframe>
