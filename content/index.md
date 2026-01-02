@@ -9,6 +9,13 @@ Stuff be a bit complicated... added a script within src/main to be able to open 
 >
 >-- Kyle
 
+__TESTING... IS THIS REAL LIFE?__
+
+```
+# this is some code
+result = function(something)
+```
+
 
 ### Is this a Rick Roll?
 #### Maybe...
