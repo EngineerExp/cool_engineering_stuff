@@ -4,10 +4,6 @@
 Currently there is not much I am doing since I am modifying the generator for this website.
 Stuff be a bit complicated... added a script within src/main to be able to open Chrome to either the local test, or the website after pushing to git.
 
-### Yeah, this is a thing.
->I cannot hold a fork properly. I hold like caveman.
->
->-- Kyle
 
 __TESTING... IS THIS REAL LIFE?__
 
@@ -15,7 +11,6 @@ __TESTING... IS THIS REAL LIFE?__
 # this is some code
 result = function(something)
 ```
-
 
 ### Is this a Rick Roll?
 #### Maybe...
