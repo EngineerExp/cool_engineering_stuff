@@ -9,7 +9,10 @@ __TESTING... IS THIS REAL LIFE?__
 ```
 # this is some code
 result = function(something)
+print(result)
 ```
+Beep boop! I AM A ROBOT!
+
 ### Is this a Rick Roll?
 #### Maybe...
 <iframe width="420" height="315"
