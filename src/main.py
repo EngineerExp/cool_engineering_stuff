@@ -54,7 +54,7 @@ def prompt_open_website(basepath,project_root=os.path.dirname(os.path.dirname(os
 # ... (your main function setup) ...
 
 def main():
-    print("Welcome to My First Static Website Generator!")
+    print("Welcome to my next static website generator!")
 
     ## use sys.argv to change basepath
     basepath = "/"
