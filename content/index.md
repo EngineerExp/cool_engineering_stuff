@@ -12,9 +12,6 @@ __TESTING... IS THIS REAL LIFE?__
 result = function(something)
 print(result)
 ```
-Beep boop! I AM A ROBOT!
-
-Gah-dang! I am lazy rn!
 
 
 ### Is this a Rick Roll?
